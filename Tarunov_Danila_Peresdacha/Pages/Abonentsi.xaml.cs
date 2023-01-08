@@ -13,21 +13,18 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Tarunov_Danila_Peresdacha
+namespace Tarunov_Danila_Peresdacha.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Abonentsi.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Abonentsi : Page
     {
-        public static Frame MainWindowFrame = new Frame();
-        public MainWindow()
+        public Abonentsi()
         {
             InitializeComponent();
-            MainWindowFrame = MainFrame;
-            MainWindowFrame.Content = new Avtorizacia();
-
-
+            var data = Tarunov_peresdacha11Entities2.Getcontext().Abonenti_1.ToList();
+            MyList.ItemsSource = data;
         }
     }
 }

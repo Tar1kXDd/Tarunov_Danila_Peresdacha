@@ -1,0 +1,26 @@
+﻿<Page x:Class="Tarunov_Danila_Peresdacha.Pages.Abonentsi"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Tarunov_Danila_Peresdacha.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Abonentsi">
+
+    <Grid>
+        <DataGrid x:Name="MyList" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="*" Binding="{Binding Nomer_abonenta}" Header="Номер абонента"/>
+                <DataGridTextColumn Width="*" Binding="{Binding FIO}" Header="Фио абонента"/>
+                <DataGridTextColumn Width="*" Binding="{Binding Pol}" Header="Пол"/>
+                <DataGridTextColumn Width="*" Binding="{Binding Data_rojgenia}" Header="Дата родждения"/>
+                <DataGridTextColumn Width="*" Binding="{Binding Nomer_telefona}" Header="Номер телефона"/>
+                <DataGridTextColumn Width="*" Binding="{Binding Email }" Header="Почта"/>
+                <DataGridTextColumn Width="*" Binding="{Binding Nomer_dogovora}" Header="Номер договора"/>
+                <DataGridTextColumn Width="*" Binding="{Binding Licevoi_nomer}" Header="Лицевого счёта "/>
+                <DataGridTextColumn Width="*" Binding="{Binding Nomer_oborydovania}" Header="Вид оборудования"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

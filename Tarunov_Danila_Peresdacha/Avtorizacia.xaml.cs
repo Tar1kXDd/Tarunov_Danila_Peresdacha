@@ -13,21 +13,23 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace Tarunov_Danila_Peresdacha
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Avtorizacia.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Avtorizacia : Page
     {
-        public static Frame MainWindowFrame = new Frame();
-        public MainWindow()
+        public Avtorizacia()
         {
             InitializeComponent();
-            MainWindowFrame = MainFrame;
-            MainWindowFrame.Content = new Avtorizacia();
+        }
 
 
+        private void Vhod_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.MainWindowFrame.Content = new Home();
         }
     }
 }

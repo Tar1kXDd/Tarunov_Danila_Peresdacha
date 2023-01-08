@@ -1,0 +1,20 @@
+﻿<Page x:Class="Tarunov_Danila_Peresdacha.Pages.Sotrudniki"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Tarunov_Danila_Peresdacha.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Sotrudniki">
+
+    <Grid>
+        <DataGrid x:Name="MyList" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="*" Binding="{Binding ID}" Header="Номер сотрудника"/>
+                <DataGridTextColumn Width="*" Binding="{Binding FIO}" Header="Фио сотрудника"/>
+                <DataGridTextColumn Width="*" Binding="{Binding Dolgjnost }" Header="Должность"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>
